@@ -9,10 +9,10 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: 'League Spartan', sans-serif;
-        width: 27.5%;
-        border: 1px solid red;
+        width: 23.44em;
+        /* border: 1px solid red; */
 
-        @media (max-width: 1440px) {
+        @media (1439px <= width <= 1440px) {
             width: 100%;
         }
     }
