@@ -5,7 +5,6 @@ type Props = {
 }
 
 const Contain = styled.div`
-    width: 375px;
     border: 1px solid red;
 `
 
@@ -35,6 +34,7 @@ const Navmenu = styled.nav<Props>`
     align-items: center;
     top: 0;
     left: 0;
+    z-index: 1;
     width: 100%;
     height: 11vh;
     background-color: #fff;
