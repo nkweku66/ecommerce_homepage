@@ -14,7 +14,9 @@ const HeroDesktop = styled.section`
     display: none;
 
     @media (1439px <= width <= 1440px) {
-        display: flex;
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
         width: 52.5em;
     }
 `

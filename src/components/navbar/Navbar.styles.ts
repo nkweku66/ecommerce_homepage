@@ -77,7 +77,7 @@ const Navlinks = styled.ul`
 
     @media (1439px <= width <= 1440px) {
         gap: 1.94em;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 `
 
