@@ -12,6 +12,7 @@ const HeroContainer = styled.section`
 
 const HeroImage = styled.img`
     width: 100%;
+    object-fit:cover;
 `
 
 const HeroNav = styled.nav`
@@ -27,6 +28,13 @@ const HeroButton = styled.button`
     border: none;
     cursor: pointer;
 
+    &:hover {
+        background-color: #444444;
+    }
+
+    &:active {
+        background-color: #444444;
+    }
 `
 
 
