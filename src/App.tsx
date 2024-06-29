@@ -1,7 +1,7 @@
-import GlobalStyle from './Styles/GlobalStyles'
-import Hero from './components/hero/Hero'
 import { data } from './data/data'
 import { useState, useEffect } from 'react'
+import GlobalStyle from './Styles/GlobalStyles'
+import Hero from './components/hero/Hero'
 import Features from './components/features/Features'
 import About from './components/about/About'
 
@@ -36,29 +36,12 @@ const App: React.FC = () => {
       }
     };
   
-    const handleSwipe = (event: TouchEvent) => {
-      const touchStartX = event.touches[0].clientX;
-      const touchEndX = event.changedTouches[0].clientX;
-  
-      if (touchStartX - touchEndX > 50) {
-        changeImage(); 
-      }
-  
-      if (touchStartX - touchEndX < -50) {
-        moveBack(); 
-      }
-    };
-  
     window.addEventListener('keydown', handleKeyDown);
-    window.addEventListener('touchstart', handleSwipe);
-    window.addEventListener('touchend', handleSwipe);
   
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
-      window.removeEventListener('touchstart', handleSwipe);
-      window.removeEventListener('touchend', handleSwipe);
     };
-  }, [index]); 
+  }, [index]);
   
   const changeImage = () => {
     setIndex((prev) => (prev + 1) % dataLen)

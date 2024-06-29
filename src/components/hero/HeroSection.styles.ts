@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 const HeroContainer = styled.section`
     position: relative;
-    /* border: 1px solid red; */
 `
 
 const HeroImage = styled.img`
