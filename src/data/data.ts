@@ -1,4 +1,3 @@
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:2996965538.
 const data = [
     {
         id: 1,
