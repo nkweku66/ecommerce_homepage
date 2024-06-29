@@ -1,8 +1,9 @@
 import GlobalStyle from './Styles/GlobalStyles'
 import Hero from './components/hero/Hero'
-import data from './data/data'
+import { data } from './data/data'
 import { useState, useEffect } from 'react'
 import Features from './components/features/Features'
+import About from './components/about/About'
 
 
 const App: React.FC = () => {
@@ -80,6 +81,7 @@ const App: React.FC = () => {
         heading={data[index].heading}
         description={data[index].description}
       />
+      <About />
     </>
   )
 }
