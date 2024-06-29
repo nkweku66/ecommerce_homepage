@@ -1,5 +1,5 @@
 import * as S from './About.styles'
-import { aboutData } from '/home/user/ecommerce_homepage/src/data/data'
+import { aboutData } from "../../../src/info-data/data"
 
 
 const About: React.FC = () => {

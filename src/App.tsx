@@ -1,4 +1,4 @@
-import { data } from './data/data'
+import { data } from './info-data/data'
 import { useState, useEffect } from 'react'
 import GlobalStyle from './Styles/GlobalStyles'
 import Hero from './components/hero/Hero'
