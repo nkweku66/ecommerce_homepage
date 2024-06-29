@@ -16,6 +16,10 @@ const GlobalStyle = createGlobalStyle`
             width: 100%;
         }
     }
+
+    button {
+        font-family: 'League Spartan', sans-serif;
+    }
 `
 
 export default GlobalStyle

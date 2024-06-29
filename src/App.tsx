@@ -2,22 +2,13 @@ import GlobalStyle from './Styles/GlobalStyles'
 import Hero from './components/hero/Hero'
 import data from './data/data'
 import { useState, useEffect } from 'react'
+import Features from './components/features/Features'
 
 
 const App: React.FC = () => {
   const [index, setIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
   const dataLen = data.length;
 
-  useEffect(() => {
-    if (isTransitioning) {
-      const timeoutId = setTimeout(() => {
-        setIsTransitioning(false);
-      }, 500); 
-  
-      return () => clearTimeout(timeoutId);
-    }
-  }, [isTransitioning]);
   
   useEffect(() => {
     const handleKeyDown = (event: { key: string }) => {
@@ -69,12 +60,10 @@ const App: React.FC = () => {
   }, [index]); 
   
   const changeImage = () => {
-    setIsTransitioning(true);
     setIndex((prev) => (prev + 1) % dataLen)
   }
   
   const moveBack = () => {
-    setIsTransitioning(true);
     setIndex((prev) => (prev - 1 + dataLen) % dataLen )
   }
  
@@ -84,11 +73,12 @@ const App: React.FC = () => {
       <Hero
         coverImage={data[index].coverImage}
         mobileImage={data[index].mobileImage}
-        heading={data[index].heading}
-        description={data[index].description}
         moveForward={changeImage}
         moveBack={moveBack}
-        isTransitioning={isTransitioning}
+      />
+      <Features
+        heading={data[index].heading}
+        description={data[index].description}
       />
     </>
   )

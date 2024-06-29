@@ -5,11 +5,8 @@ import Navbar from '../navbar/Navbar'
 interface Props {
   coverImage?: string;
   mobileImage?: string;
-  heading: string;
-  description: string;
   moveForward?:  MouseEventHandler<HTMLButtonElement>;
   moveBack?:   MouseEventHandler<HTMLButtonElement>;
-  isTransitioning: boolean;
 }
 
 
