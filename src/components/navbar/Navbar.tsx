@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react'
 import * as S from './Navbar.styles'
-import logo from '/src/assets/images/logo.svg'
+import logo from '/public/images/logo.svg'
 
 
 const Navbar: React.FC = () => {
