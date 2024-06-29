@@ -11,11 +11,12 @@ const AboutImage = styled.img`
 const AboutContainer = styled.div`
     padding: 3.0625em 2em 2.56em 2em;
 `
-const AboutHeader = styled.h3`
+const AboutHeader = styled.h2`
     font-size: 0.875rem;
-    font-weight: 600;
+    font-weight: bold;
+    text-transform: uppercase;
     letter-spacing:5.83px;
-    margin-bottom: 0.4em;
+    margin-bottom: 1em;
 `
 const AboutContent = styled.p`
     color: #A0A0A0;
