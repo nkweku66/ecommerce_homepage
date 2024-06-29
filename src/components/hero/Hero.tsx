@@ -7,36 +7,31 @@ interface Props {
   mobileImage?: string;
   heading: string;
   description: string;
-  handleClick?: MouseEventHandler<SVGSVGElement>;
-  switchBack?:  MouseEventHandler<SVGSVGElement>;
+  moveForward?:  MouseEventHandler<HTMLButtonElement>;
+  moveBack?:   MouseEventHandler<HTMLButtonElement>;
   isTransitioning: boolean;
 }
 
 
 const Hero: React.FC<Props> = (props: Props) => {
   return (
-  <S.HeroWrapper>
+
     <S.HeroContainer>
       {/* <Navbar /> */}
       <S.HeroImage src={props.mobileImage} />
       <S.HeroNav>
-        <S.HeroButton>
+        <S.HeroButton onClick={props.moveBack}>
           <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
             <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd"/>
           </svg>
         </S.HeroButton>
-        <S.HeroButton>
+        <S.HeroButton onClick={props.moveForward}>
           <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd"/>
           </svg>
         </S.HeroButton>
       </S.HeroNav>
-    </S.HeroContainer>
-    <S.HeroContent>
-      <S.HeroHeading>{props.heading}</S.HeroHeading>
-      <S.HeroDescription>{props.description}</S.HeroDescription>
-    </S.HeroContent>
-  </S.HeroWrapper>
+    </S.HeroContainer> 
   )
 }
 

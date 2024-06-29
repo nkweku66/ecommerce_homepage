@@ -27,7 +27,7 @@ const App: React.FC = () => {
       if (event.key === 'ArrowRight') {
         changeImage();
       } else if (event.key === 'ArrowLeft') {
-        switchBack();
+        moveBack();
       }
     };
   
@@ -43,7 +43,7 @@ const App: React.FC = () => {
       if (event.key === 'ArrowRight') {
         changeImage();
       } else if (event.key === 'ArrowLeft') {
-        switchBack();
+        moveBack();
       }
     };
   
@@ -56,7 +56,7 @@ const App: React.FC = () => {
       }
   
       if (touchStartX - touchEndX < -50) {
-        switchBack(); // Swipe right to navigate to the previous image
+        moveBack(); // Swipe right to navigate to the previous image
       }
     };
   
@@ -76,7 +76,7 @@ const App: React.FC = () => {
     setIndex((prev) => (prev + 1) % dataLen)
   }
   
-  const switchBack = () => {
+  const moveBack = () => {
     setIsTransitioning(true);
     setIndex((prev) => (prev - 1 + dataLen) % dataLen )
   }
@@ -89,8 +89,8 @@ const App: React.FC = () => {
         mobileImage={data[index].mobileImage}
         heading={data[index].heading}
         description={data[index].description}
-        handleClick={changeImage}
-        switchBack={switchBack}
+        moveForward={changeImage}
+        moveBack={moveBack}
         isTransitioning={isTransitioning}
       />
     </>
