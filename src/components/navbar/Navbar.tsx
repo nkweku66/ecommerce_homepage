@@ -29,6 +29,15 @@ const Navbar: React.FC = () => {
 
   return (
     <>
+      <S.NavDesk>
+        <S.Navlinks>
+          <S.NavLogo src={logo} />
+          <S.Navlink>home</S.Navlink>
+          <S.Navlink>shop</S.Navlink>
+          <S.Navlink>about</S.Navlink>
+          <S.Navlink>contact</S.Navlink>
+        </S.Navlinks>
+      </S.NavDesk>
       <S.Nav>
           <S.NavMenuButton onClick={toggleMenu}>
             <svg width="20" height="14" xmlns="http://www.w3.org/2000/svg">

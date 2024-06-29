@@ -1,9 +1,10 @@
-import { data } from './data/data'
+import { data } from './info-data/data'
 import { useState, useEffect } from 'react'
 import GlobalStyle from './Styles/GlobalStyles'
 import Hero from './components/hero/Hero'
 import Features from './components/features/Features'
 import About from './components/about/About'
+import Wrapper from './App.styles'
 
 
 const App: React.FC = () => {
@@ -53,17 +54,21 @@ const App: React.FC = () => {
  
   return (
     <>
-      <GlobalStyle />
-      <Hero
-        coverImage={data[index].coverImage}
-        mobileImage={data[index].mobileImage}
-        moveForward={changeImage}
-        moveBack={moveBack}
-      />
-      <Features
-        heading={data[index].heading}
-        description={data[index].description}
-      />
+      <Wrapper>
+        <GlobalStyle />
+        <Hero
+          coverImage={data[index].coverImage}
+          mobileImage={data[index].mobileImage}
+          moveForward={changeImage}
+          moveBack={moveBack}
+        />
+        <Features
+          heading={data[index].heading}
+          description={data[index].description}
+          moveForward={changeImage}
+          moveBack={moveBack}
+        />
+      </Wrapper>
       <About />
     </>
   )
