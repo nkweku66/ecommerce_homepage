@@ -3,6 +3,10 @@ import styled from 'styled-components'
 const AboutWrapper = styled.section`
     display: flex;
     flex-direction: column;
+
+    @media (1439px <= width <= 1440px) {
+        flex-direction: row;
+    }
 `
 const AboutImage = styled.img`
     width: 100%;
