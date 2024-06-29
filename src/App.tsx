@@ -4,9 +4,6 @@ import data from './data/data'
 import { useState, useEffect } from 'react'
 
 
-
-
-
 const App: React.FC = () => {
   const [index, setIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -16,7 +13,7 @@ const App: React.FC = () => {
     if (isTransitioning) {
       const timeoutId = setTimeout(() => {
         setIsTransitioning(false);
-      }, 500); // Match the duration of the CSS transition
+      }, 500); 
   
       return () => clearTimeout(timeoutId);
     }
@@ -52,11 +49,11 @@ const App: React.FC = () => {
       const touchEndX = event.changedTouches[0].clientX;
   
       if (touchStartX - touchEndX > 50) {
-        changeImage(); // Swipe left to navigate to the next image
+        changeImage(); 
       }
   
       if (touchStartX - touchEndX < -50) {
-        moveBack(); // Swipe right to navigate to the previous image
+        moveBack(); 
       }
     };
   
