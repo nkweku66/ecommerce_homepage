@@ -1,6 +1,6 @@
 import * as S from './HeroSection.styles'
 import { MouseEventHandler } from 'react'
-// import Navbar from './components/navbar/Navbar'
+import Navbar from '../navbar/Navbar'
 
 interface Props {
   coverImage?: string;
@@ -17,7 +17,7 @@ const Hero: React.FC<Props> = (props: Props) => {
   return (
 
     <S.HeroContainer>
-      {/* <Navbar /> */}
+      <Navbar />
       <S.HeroImage src={props.mobileImage} />
       <S.HeroNav>
         <S.HeroButton onClick={props.moveBack}>

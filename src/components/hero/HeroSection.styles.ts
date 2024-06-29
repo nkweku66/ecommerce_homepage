@@ -1,12 +1,7 @@
 import styled from 'styled-components'
 
 const HeroContainer = styled.section`
-    width: 375px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
-    top: 0;
     /* border: 1px solid red; */
 `
 

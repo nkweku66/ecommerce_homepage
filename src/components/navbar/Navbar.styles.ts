@@ -12,6 +12,7 @@ const Nav = styled.nav`
     display: flex;
     align-items: center;
     margin: 3em 1.5em;
+    position: absolute;
     /* border: 1px solid blue; */
 `
 
