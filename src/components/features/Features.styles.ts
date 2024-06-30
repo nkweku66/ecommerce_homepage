@@ -7,10 +7,9 @@ interface Props {
 const FeatWrapper = styled.section`
     padding: 3.75em 2em 4.5em 2em;
     position: relative;
-    border: 1px solid red;
 
     @media only screen and (min-width: 1440px) {
-        padding: 7.5em 6.25em 9.56em 6.25em;
+        padding: 5em 6.25em 9.56em 6.25em;
     }
 
 
