@@ -86,6 +86,7 @@ const Navlink = styled.a`
     letter-spacing: -0.67px;
     transition: color 0.3s ease;
     position: relative;
+    cursor: pointer;
 
     &:hover {
         color: #666;
