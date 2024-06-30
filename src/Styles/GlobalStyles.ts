@@ -14,10 +14,6 @@ const GlobalStyle = createGlobalStyle`
         @media (min-width: 1440px) {
             width: 100%;
         }
-        
-        @media (min-width: 376px) and (max-width: 1439px) {
-            width: 100%;
-        }
     }
 
     button {
