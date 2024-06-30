@@ -3,7 +3,8 @@ import styled from 'styled-components'
 const HeroContainer = styled.section`
     position: relative;
 
-    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    
+    @media only screen and (min-width: 1440px) {
         display: none;
     }
 `
@@ -12,11 +13,6 @@ const HeroWrapper = styled.div`
 `
 const HeroDesktop = styled.section`
     display: none;
-
-    @media only screen and (min-width: 1025px) and (max-width: 1439px) {
-        display: flex;
-        width: 100%;
-    }
 
     @media only screen and (min-width: 1440px) {
         display: flex;
