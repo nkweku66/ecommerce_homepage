@@ -6,12 +6,17 @@ type Props = {
 
 const NavDesk = styled.nav`
     display: none;
+    margin: 3.94em 0 0 3em;
+    position: absolute;
 
-    @media (1439px <= width <= 1440px) {
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
         display: flex;
         align-tems: center;
-        margin: 3.94em 0 0 3em;
-        position: absolute;
+    }
+
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        display: flex;
+        align-tems: center;
     }
 `
 
@@ -21,7 +26,17 @@ const Nav = styled.nav`
     margin: 3em 1.5em;
     position: absolute;
 
-    @media (1439px <= width <= 1440px) {
+
+    @media (376px <= width <= 576px) {
+        margin-left: 3.5em;
+    }
+
+
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        display: none;
+    }
+
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
         display: none;
     }
 `
@@ -31,7 +46,11 @@ const NavMenuButton = styled.button`
     border: none;
     cursor: pointer;
 
-    @media (1439px <= width <= 1440px) {
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        display: none;
+    }
+
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
         display: none;
     }
 `
@@ -41,9 +60,17 @@ const NavLogo = styled.img`
     height: 0.9em;
     cursor: pointer;
 
-    @media (1439px <= width <= 1440px) {
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
         margin-right: 2em;
         margin-left: 0;
+    }
+    @media (min-width: 577px) and (max-width: 768px) {
+        margin-left: 10em;
+    }
+
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        margin-left: 0;
+        margin-right: 3em;
     }
 `
 
@@ -62,7 +89,11 @@ const Navmenu = styled.nav<Props>`
     box-shadow: 0 0 100px 10000px rgba(0, 0, 0, 0.5);
     transition: ease-out 0.5s;
 
-    @media (1439px <= width <= 1440px) {
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        display: none;
+    }
+
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
         display: none;
     }
 `
@@ -75,9 +106,8 @@ const Navlinks = styled.ul`
     padding: 0;
     margin-left: 4em;
 
-    @media (1439px <= width <= 1440px) {
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
         gap: 1.94em;
-        /* border: 1px solid red; */
     }
 `
 
@@ -93,7 +123,7 @@ const Navlink = styled.a`
         color: #666;
     }
 
-    @media (1439px <= width <= 1440px) {
+    @media only screen and (min-width: 769px) and (max-width: 1440px) {
         color: #fff;
         font-size: 1.2rem;
 

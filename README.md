@@ -1,6 +1,6 @@
 Room Ecommerce homepage solution
 
-This is a solution to the [Room homepage Task](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Room homepage Task](https://ecommerce-homepage-theta.vercel.app/). 
 
 ## Table of contents
 
@@ -16,9 +16,15 @@ This is a solution to the [Room homepage Task](https://www.frontendmentor.io/cha
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+
+This project involves building the homepage for an e-commerce site "Room" using React with Typescript. The primary goal is to:
+- Replicate the designs as close as possible
+- Implement an image slider 
+- Change displayed content based on change in image
+- Be able to use the mouse/trackpad or keyboard to navigate the slider
+- Hover effects for all interactive elements on the page
 
 ### The challenge
 

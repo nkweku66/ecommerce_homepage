@@ -14,9 +14,6 @@ const HeroDesktop = styled.section`
     display: none;
 
     @media (1439px <= width <= 1440px) {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 3;
         width: 52.5em;
     }
 `
@@ -26,10 +23,12 @@ const HeroImage = styled.img`
 `
 
 const HeroNav = styled.nav`
-    position: absolute;
-    top: 19.58em;
-    left: 17.58em;
+    position: sticky;
+    margin-top: -3.25em;
+    margin-left: 17.6em;
+    margin-right: auto;
 `
+
 
 const HeroButton = styled.button`
     width: 3.5em;

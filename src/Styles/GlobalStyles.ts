@@ -11,7 +11,11 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'League Spartan', sans-serif;
         width: 23.44em;
 
-        @media (1439px <= width <= 1440px) {
+        @media (min-width: 1440px) {
+            width: 100%;
+        }
+        
+        @media (min-width: 376px) and (max-width: 1439px) {
             width: 100%;
         }
     }
