@@ -65,7 +65,7 @@ const FeatButton = styled.button<Props>`
         color: #A0A0A0;
     }
 
-    @media (1025px <= width <= 1440px) {
+    @media only screen and (min-width: 1440px) {
         width: ${(props) => (props.variant ? '5em' : '')};
         height: ${(props) => (props.variant ? '5em' : '')};
         
@@ -92,7 +92,7 @@ const FeatNav = styled.nav`
     top: 29.4em;
     left: 0;
 
-    @media (1025px <= width <= 1440px) {
+    @media only screen and (min-width: 1440px) {
         display: flex;
     }
 `
