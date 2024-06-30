@@ -22,7 +22,7 @@ const FeatHeader = styled.h1`
     margin-bottom: 0.4em;
 
     @media only screen and (1366px <= width <= 1440px) {
-        font-size: 3rem;
+        font-size: 2.5rem;
         letter-spacing: -2px;
         
     }
