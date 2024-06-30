@@ -32,14 +32,14 @@ const Navbar: React.FC = () => {
       <S.NavDesk>
         <S.Navlinks>
           <S.NavLogo src={logo} />
-          <S.Navlink>home</S.Navlink>
-          <S.Navlink>shop</S.Navlink>
-          <S.Navlink>about</S.Navlink>
-          <S.Navlink>contact</S.Navlink>
+          <S.Navlink href='#home'>home</S.Navlink>
+          <S.Navlink href='#shop'>shop</S.Navlink>
+          <S.Navlink href='#about'>about</S.Navlink>
+          <S.Navlink href='#contact'>contact</S.Navlink>
         </S.Navlinks>
       </S.NavDesk>
       <S.Nav>
-          <S.NavMenuButton onClick={toggleMenu}>
+          <S.NavMenuButton onClick={toggleMenu} type='button'>
             <svg width="20" height="14" xmlns="http://www.w3.org/2000/svg">
               <path d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z" fill="#FFF" fill-rule="evenodd"/>
             </svg>
@@ -47,16 +47,16 @@ const Navbar: React.FC = () => {
           <S.NavLogo src={logo} />
       </S.Nav>
       <S.Navmenu visible={isMenuClicked}>
-          <S.NavMenuButton ref={menuRef} onClick={toggleMenu}>
+          <S.NavMenuButton ref={menuRef} onClick={toggleMenu} type='button'>
             <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.364.222l1.414 1.414L9.414 8l6.364 6.364-1.414 1.414L8 9.414l-6.364 6.364-1.414-1.414L6.586 8 .222 1.636 1.636.222 8 6.586 14.364.222z" fill="#000" fill-rule="evenodd" opacity=".201"/>
             </svg>
           </S.NavMenuButton>
           <S.Navlinks>
-              <S.Navlink>home</S.Navlink>
-              <S.Navlink>shop</S.Navlink>
-              <S.Navlink>about</S.Navlink>
-              <S.Navlink>contact</S.Navlink>
+              <S.Navlink href='#home'>home</S.Navlink>
+              <S.Navlink href='#shop'>shop</S.Navlink>
+              <S.Navlink href='#about'>about</S.Navlink>
+              <S.Navlink href='#contact'>contact</S.Navlink>
           </S.Navlinks>
       </S.Navmenu>
     </>

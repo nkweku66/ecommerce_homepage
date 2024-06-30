@@ -16,18 +16,18 @@ const Hero: React.FC<Props> = (props: Props) => {
     <S.HeroWrapper>
       <S.HeroDesktop>
         <Navbar />
-        <S.HeroImage src={props.coverImage} />
+        <S.HeroImage src={props.coverImage} alt='furniture images'/>
       </S.HeroDesktop>
       <S.HeroContainer>
         <Navbar />
-        <S.HeroImage src={props.mobileImage} />
+        <S.HeroImage src={props.mobileImage} alt='furniture images'/>
         <S.HeroNav>
-          <S.HeroButton onClick={props.moveBack}>
+          <S.HeroButton onClick={props.moveBack} type='button'>
             <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
               <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd"/>
             </svg>
           </S.HeroButton>
-          <S.HeroButton onClick={props.moveForward}>
+          <S.HeroButton onClick={props.moveForward} type='button'>
             <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd"/>
             </svg>
