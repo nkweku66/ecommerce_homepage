@@ -7,10 +7,13 @@ interface Props {
 const FeatWrapper = styled.section`
     padding: 3.75em 2em 4.5em 2em;
     position: relative;
+    border: 1px solid red;
 
-    @media (1439px <= width <= 1440px) {
+    @media only screen and (min-width: 1440px) {
         padding: 7.5em 6.25em 9.56em 6.25em;
     }
+
+
 `
 
 const FeatHeader = styled.h1`
@@ -19,7 +22,7 @@ const FeatHeader = styled.h1`
     letter-spacing:-1.67px;
     margin-bottom: 0.4em;
 
-    @media (1439px <= width <= 1440px) {
+    @media only screen and (min-width: 1440px) {
         font-size: 3rem;
         letter-spacing: -2px;
         
@@ -31,7 +34,7 @@ const FeatContent = styled.p`
     letter-spacing: -0.67px;
     line-height: 1.37rem;
 
-    @media (1439px <= width <= 1440px) {
+    @media only screen and (min-width: 1440px) {
         font-size: 1rem;
         letter-spacing: -0.33px;
     }
@@ -62,7 +65,7 @@ const FeatButton = styled.button<Props>`
         color: #A0A0A0;
     }
 
-    @media (1439px <= width <= 1440px) {
+    @media (1025px <= width <= 1440px) {
         width: ${(props) => (props.variant ? '5em' : '')};
         height: ${(props) => (props.variant ? '5em' : '')};
         
@@ -89,7 +92,7 @@ const FeatNav = styled.nav`
     top: 29.4em;
     left: 0;
 
-    @media (1439px <= width <= 1440px) {
+    @media (1025px <= width <= 1440px) {
         display: flex;
     }
 `

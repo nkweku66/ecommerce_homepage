@@ -15,7 +15,7 @@ const HeroDesktop = styled.section`
 
     @media only screen and (min-width: 1025px) and (max-width: 1439px) {
         display: flex;
-        width: 80%;
+        width: 100%;
     }
 
     @media only screen and (min-width: 1440px) {
