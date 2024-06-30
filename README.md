@@ -1,6 +1,6 @@
 Room Ecommerce homepage solution
 
-This is a solution to the [Room homepage Task](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Room homepage Task](https://ecommerce-homepage-theta.vercel.app/). 
 
 ## Table of contents
 
@@ -16,9 +16,15 @@ This is a solution to the [Room homepage Task](https://www.frontendmentor.io/cha
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+
+This project involves building the homepage for an e-commerce site "Room" using React with Typescript. The primary goal is to:
+- Replicate the designs as close as possible
+- Implement an image slider 
+- Change displayed content based on change in image
+- Be able to use the mouse/trackpad or keyboard to navigate the slider
+- Hover effects for all interactive elements on the page
 
 ### The challenge
 
@@ -29,84 +35,86 @@ Users should be able to:
 - Navigate the slider using either their mouse/trackpad or keyboard
 
 ### Screenshot
+#### Mobile View
 
-![](./screenshot.jpg)
+![](./src/website_images/mobile-full.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+#### Desktop View
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+![](./src/website_images/desktop-full.png)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [The solution](https://github.com/nkweku66/ecommerce_homepage)
+- Live Site URL: [The Room Homepage](https://ecommerce-homepage-theta.vercel.app/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
+- [React](https://reactjs.org/) - JS library for building user interfaces
+- [Typescript](https://www.typescriptlang.org/) - A typed superset of JavaScript
+- [Vite](https://vitejs.dev/) - A build tool for modern JavaScript
 - [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Throughout this project, I gained valuable experience and knowledge in several key areas:
 
-To see how you can add code snippets, see below:
+1. Building React Applications:
+  
+I enhanced my skills in building React applications using JavaScript and improved significantly with TypeScript.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+2. Working with Git Flow:
+
+I learned how to effectively use the Git Flow approach for development, which helped me manage branches and streamline the development process.
+Styling with Styled Components:
+
+3. Instead of traditional CSS files, I utilized styled components for styling my React components, which offered a more modular and dynamic approach.
+
+4. React Concepts:
+I delved into the concepts of conditional rendering, useState, and useEffect.
+
+5. Favorite Aspects:
+I particularly enjoyed working with props in React and styled components, which allowed for flexible and reusable component designs.
+Data-driven development in React was another aspect I found enjoyable and insightful.
+Overall, this project was a fantastic learning experience that deepened my understanding of React and modern web development practices.
+
+#### some code snippets:
+```typescript
+ const [isMenuClicked, setIsMenuClicked] = useState<boolean>(false)
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Throughout the development there were a few parts that i fell short and would like to develop in those areas.
+These areas are:
+- the effective use of useState, useEffect, useRef and the other react hooks available
+- Proper type handling
+- Effective use of the git flow method of development
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [React with Typescript](https://www.freecodecamp.org/news/use-typescript-with-react/) - This is an amazing article which helped me finally understand how to develop react application using typescript.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Styled Components](https://youtube.com/playlist?list=PLC3y8-rFHvwgu-G08-7ovbN9EyhF_cltM&si=EwttGaIo9EkpA3NK) - This helped me to understand the concept of styled components and how to use it.
+
+- [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow#:~:text=Gitflow%20is%20an%20alternative%20Git,lived%20branches%20and%20larger%20commits.) - This is an amazing article which helped me understand gitflow workflow. 
+
 
 ## Author
+##### Nana Obeng
+- Github - [@nkweku66](https://github.com/nkweku66)
+- Linkedin - [denakwob](https://www.linkedin.com/in/denakwob/)
+- Twitter - [@nadeob](https://www.x.com/nadeobeng)
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I will like to first thank Amalitech for putting me on this path of self paced timed learning. It has helped me to come out of my shell to get this work done and for such i have learnt a lot. I will also like to acknowledge Mr edem who helped me to get some concepts in place and simple to understand.

@@ -3,7 +3,8 @@ import styled from 'styled-components'
 const HeroContainer = styled.section`
     position: relative;
 
-    @media (1439px <= width <= 1440px) {
+    
+    @media only screen and (min-width: 1440px) {
         display: none;
     }
 `
@@ -13,11 +14,9 @@ const HeroWrapper = styled.div`
 const HeroDesktop = styled.section`
     display: none;
 
-    @media (1439px <= width <= 1440px) {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        width: 52.5em;
+    @media only screen and (min-width: 1440px) {
+        display: flex;
+        width: 100%;
     }
 `
 const HeroImage = styled.img`
@@ -26,10 +25,12 @@ const HeroImage = styled.img`
 `
 
 const HeroNav = styled.nav`
-    position: absolute;
-    top: 19.58em;
-    left: 17.58em;
+    position: sticky;
+    margin-top: -3.25em;
+    margin-left: 17.6em;
+    margin-right: auto;
 `
+
 
 const HeroButton = styled.button`
     width: 3.5em;
