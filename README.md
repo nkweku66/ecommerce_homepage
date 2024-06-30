@@ -41,7 +41,7 @@ Users should be able to:
 
 #### Desktop View
 
-![](./src/website_images/desktop-full.png)
+![](./src/website_images/desktop_view.png)
 
 
 ### Links

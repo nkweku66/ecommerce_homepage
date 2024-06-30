@@ -4,7 +4,7 @@ const HeroContainer = styled.section`
     position: relative;
 
     
-    @media only screen and (min-width: 1440px) {
+    @media only screen and (1366px <= width <= 1440px) {
         display: none;
     }
 `
@@ -14,7 +14,7 @@ const HeroWrapper = styled.div`
 const HeroDesktop = styled.section`
     display: none;
 
-    @media only screen and (min-width: 1440px) {
+    @media only screen and (1366px <= width <= 1440px) {
         display: flex;
         width: 100%;
     }
@@ -41,6 +41,7 @@ const HeroButton = styled.button`
 
     &:hover {
         background-color: #444444;
+        transition: 0.3s ease-in-out;
     }
 
     &:active {
