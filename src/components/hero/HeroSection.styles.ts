@@ -4,7 +4,7 @@ const HeroContainer = styled.section`
     position: relative;
 
     
-    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    @media only screen and (min-width: 1440px) {
         display: none;
     }
 `
@@ -14,9 +14,9 @@ const HeroWrapper = styled.div`
 const HeroDesktop = styled.section`
     display: none;
 
-    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    @media only screen and (min-width: 1440px) {
         display: flex;
-        width: 70%;
+        width: 100%;
     }
 `
 const HeroImage = styled.img`
