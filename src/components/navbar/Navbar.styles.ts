@@ -10,7 +10,7 @@ const NavDesk = styled.nav`
     position: absolute;
 
 
-    @media only screen and (1366px <= width <= 1440px) {
+    @media only screen and (728px <= width <= 1920px) {
         display: flex;
         align-tems: center;
     }
@@ -22,7 +22,7 @@ const Nav = styled.nav`
     margin: 3em 1.5em;
     position: absolute;
 
-    @media only screen and (1366px <= width <= 1440px) {
+    @media only screen and (728px <= width <= 1920px) {
         display: none;
     }
 `
@@ -32,9 +32,6 @@ const NavMenuButton = styled.button`
     border: none;
     cursor: pointer;
 
-    @media only screen and (1366px <= width <= 1440px) {
-        display: none;
-    }
 `
 
 const NavLogo = styled.img`
@@ -42,7 +39,7 @@ const NavLogo = styled.img`
     height: 0.9em;
     cursor: pointer;
 
-    @media only screen and (1366px <= width <= 1440px) {
+    @media only screen and (728px <= width <= 1920px) {
         margin-left: 0;
         margin-right: 3em;
     }
@@ -64,7 +61,7 @@ const Navmenu = styled.nav<Props>`
     transition: ease-out 0.5s;
 
 
-    @media only screen and (1366px <= width <= 1440px) {
+    @media only screen and (728px <= width <= 1920px) {
         display: none;
     }
 `
@@ -76,6 +73,10 @@ const Navlinks = styled.ul`
     margin: 0;
     padding: 0;
     margin-left: 4em;
+
+    @media only screen and (728px <= width <= 1024px) {
+        gap: 3rem;
+    }
 
 `
 
@@ -92,7 +93,7 @@ const Navlink = styled.a`
         color: #666;
     }
 
-    @media only screen and (1366px <= width <= 1440px) {
+    @media only screen and (728px <= width <= 1920px) {
         color: #fff;
         font-size: 1.2rem;
 

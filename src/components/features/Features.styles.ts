@@ -8,11 +8,17 @@ const FeatWrapper = styled.section`
     padding: 3.75em 2em 4.5em 2em;
     position: relative;
 
-    @media only screen and (1366px <= width <= 1440px) {
-        padding: 5em 6.25em 9.56em 6.25em;
+    @media only screen and (768px <= width <= 1023px) {
+        padding: 5em 6.25em 7em 6em;
     }
 
+    @media only screen and (1024px <= width <= 1439px) {
+        padding: 4.5em 2.25em 3em 3em;
+    }
 
+    @media only screen and (min-width: 1440px) {
+        padding: 7.5em 5em 9.5625em 5em;
+    }
 `
 
 const FeatHeader = styled.h1`
@@ -21,11 +27,20 @@ const FeatHeader = styled.h1`
     letter-spacing:-1.67px;
     margin-bottom: 0.4em;
 
-    @media only screen and (1366px <= width <= 1440px) {
+    @media only screen and (768px <= width <= 1920px) {
         font-size: 3rem;
         letter-spacing: -2px;
         
     }
+
+    @media only screen and (1024px <= width <= 1439px) {
+        font-size: 2.3rem;
+    }
+
+    @media only screen and (min-width: 1440px) {
+        font-size: 3em;
+    }
+
 `
 
 const FeatContent = styled.p`
@@ -33,9 +48,19 @@ const FeatContent = styled.p`
     letter-spacing: -0.67px;
     line-height: 1.37rem;
 
-    @media only screen and (1366px <= width <= 1440px) {
-        font-size: 1rem;
+    @media only screen and (768px <= width <= 1920px) {
+        font-size: 1.2rem;
         letter-spacing: -0.33px;
+        line-height: 1.5rem;
+    }
+
+    @media only screen and (1024px <= width <= 1920px) {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+
+    @media only screen and (min-width: 1440px) {
+        font-size: 1.1rem;
     }
 `
 const FeatButton = styled.button<Props>`
@@ -62,7 +87,7 @@ const FeatButton = styled.button<Props>`
         }
 
     & > span {
-        margin-right: auto;
+        margin-right: 2em;
     }
 
     & > span:hover {
@@ -75,17 +100,17 @@ const FeatButton = styled.button<Props>`
         transition: 0.3s ease-in-out;
     }
 
-    @media only screen and (1366px <= width <= 1440px) {
+    @media only screen and (768px <= width <= 1920px) {
         width: ${(props) => (props.variant ? '5em' : '')};
         height: ${(props) => (props.variant ? '5em' : '')};
 
         &:hover {
-            background-color: ${(props) => (props.variant ? '#444444' : 'transparent')};;
+            background-color: ${(props) => (props.variant ? '#444444' : 'transparent')};
             transition: 0.3s ease-in-out;
         }
 
         &:active {
-            background-color: ${(props) => (props.variant ? '#444444' : 'transparent')};;
+            background-color: ${(props) => (props.variant ? '#444444' : 'transparent')};
             transition: 0.3s ease-in-out;
         }
         
@@ -93,9 +118,19 @@ const FeatButton = styled.button<Props>`
         margin: 0 auto;
     }
 
+    @media only screen and (width >= 1024px) {
+        width: ${(props) => (props.variant ? '4em' : '')};
+        height: ${(props) => (props.variant ? '4em' : '')};
+        margin-top: ${(props) => (props.variant ? '-2.2em' : '2.56em')};
+    }
+
+    @media only screen and (min-width: 1440px) {
+        width: ${(props) => (props.variant ? '5em' : '')};
+        height: ${(props) => (props.variant ? '5em' : '')};
+        margin-top: ${(props) => (props.variant ? '-7.45em' : '2.56em')};
+    }
+
 }
-
-
 
 `
 const FeatNav = styled.nav`
@@ -104,8 +139,13 @@ const FeatNav = styled.nav`
     top: 28.85em;
     left: 0;
 
-    @media only screen and (1366px <= width <= 1440px) {
+    @media only screen and (1024px <= width <= 1920px) {
         display: flex;
+        top: 24.8em;
+    }
+
+    @media only screen and (min-width: 1440px) {
+        top: 35.55em;
     }
 `
 
