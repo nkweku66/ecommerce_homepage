@@ -1,14 +1,13 @@
 import styled from 'styled-components'
 
-interface Props {
+interface HeroProps {
     mobile?: boolean;
 }
-
 const HeroContainer = styled.section`
     position: relative;
 
     
-    @media only screen and (1366px <= width <= 1440px) {
+    @media only screen and (1024px <= width <= 1920px) {
         display: none;
     }
 `
@@ -18,22 +17,33 @@ const HeroWrapper = styled.div`
 const HeroDesktop = styled.section`
     display: none;
 
-    @media only screen and (1366px <= width <= 1440px) {
+    @media only screen and (768px <= width <= 1920px) {
         display: flex;
         width: 100%;
     }
 `
-const HeroImage = styled.img<Props>`
+const HeroImage = styled.img<HeroProps>`
     width: 100%;
-    height:${(props) => (props.mobile ? '36vh': '')};
-    object-fit: cover;
+    height: 100%;
+    object-fit:cover;
+
+    @media only screen and (768px <= width <= 1023px) {
+        display: ${(props) => (props.mobile ? 'none' : '')};
+    }
 `
 
 const HeroNav = styled.nav`
-    position: sticky;
-    margin-top: -3.25em;
-    margin-left: 17.6em;
-    margin-right: auto;
+    display: flex;
+    margin-top: -4px;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+
+
+    @media only screen and (min-width: 728px) {
+        margin-top: 0;
+    }
 `
 
 

@@ -21,7 +21,7 @@ const Hero: React.FC<Props> = (props: Props) => {
       </S.HeroDesktop>
       <S.HeroContainer>
         <Navbar />
-        <S.HeroImage src={props.mobileImage} alt='furniture images' mobile={true}/>
+        <S.HeroImage src={props.mobileImage} mobile={true} />
         <S.HeroNav>
           <S.HeroButton onClick={props.moveBack} type='button'>
             <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
