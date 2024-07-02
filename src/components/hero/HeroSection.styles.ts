@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+interface Props {
+    mobile?: boolean;
+}
+
 const HeroContainer = styled.section`
     position: relative;
 
@@ -19,9 +23,10 @@ const HeroDesktop = styled.section`
         width: 100%;
     }
 `
-const HeroImage = styled.img`
+const HeroImage = styled.img<Props>`
     width: 100%;
-    object-fit:cover;
+    height:${(props) => (props.mobile ? '36vh': '')};
+    object-fit: cover;
 `
 
 const HeroNav = styled.nav`

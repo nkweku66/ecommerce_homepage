@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react'
 import * as S from './Navbar.styles'
-import logo from '/public/images/logo.svg'
+import logo from '/images/logo.svg'
 
 
 const Navbar: React.FC = () => {
@@ -29,15 +29,6 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <S.NavDesk>
-        <S.Navlinks>
-          <S.NavLogo src={logo} />
-          <S.Navlink href='#home'>home</S.Navlink>
-          <S.Navlink href='#shop'>shop</S.Navlink>
-          <S.Navlink href='#about'>about</S.Navlink>
-          <S.Navlink href='#contact'>contact</S.Navlink>
-        </S.Navlinks>
-      </S.NavDesk>
       <S.Nav>
           <S.NavMenuButton onClick={toggleMenu} type='button'>
             <svg width="20" height="14" xmlns="http://www.w3.org/2000/svg">
@@ -59,6 +50,15 @@ const Navbar: React.FC = () => {
               <S.Navlink href='#contact'>contact</S.Navlink>
           </S.Navlinks>
       </S.Navmenu>
+      <S.NavDesk>
+        <S.Navlinks>
+          <S.NavLogo src={logo} alt='logo' />
+          <S.Navlink href='#home'>home</S.Navlink>
+          <S.Navlink href='#shop'>shop</S.Navlink>
+          <S.Navlink href='#about'>about</S.Navlink>
+          <S.Navlink href='#contact'>contact</S.Navlink>
+        </S.Navlinks>
+      </S.NavDesk>
     </>
   )
 }
