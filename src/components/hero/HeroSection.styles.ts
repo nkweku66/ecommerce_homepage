@@ -7,7 +7,7 @@ const HeroContainer = styled.section`
     position: relative;
 
     
-    @media only screen and (1024px <= width <= 1920px) {
+    @media only screen and (64em <= width <= 120em) {
         display: none;
     }
 `
@@ -17,7 +17,7 @@ const HeroWrapper = styled.div`
 const HeroDesktop = styled.section`
     display: none;
 
-    @media only screen and (600px <= width <= 1920px) {
+    @media only screen and (37.5em <= width <= 120em) {
         display: flex;
         width: 100%;
     }
@@ -27,7 +27,7 @@ const HeroImage = styled.img<HeroProps>`
     height: 100%;
     object-fit:cover;
 
-    @media only screen and (600px <= width <= 1023px) {
+    @media only screen and (37.5em <= width <= 63.9375em) {
         display: ${(props) => (props.mobile ? 'none' : '')};
     }
 `
@@ -41,7 +41,7 @@ const HeroNav = styled.nav`
     transform: translate(-100%, -100%);
 
 
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 37.5em) {
         margin-top: 0;
     }
 `

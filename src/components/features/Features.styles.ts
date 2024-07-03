@@ -8,19 +8,19 @@ const FeatWrapper = styled.section`
     padding: 3.75em 2em 4.5em 2em;
     position: relative;
 
-    @media only screen and (600px <= width <= 1023px) {
+    @media only screen and (37.5em <= width <= 63.9375em) {
         padding: 5em 6.25em 7em 6em;
     }
 
-    @media only screen and (1024px <= width <= 1439px) {
+    @media only screen and (64em <= width <= 89.9375em) {
         padding: 4.5em 2.25em 3em 3em;
     }
 
-    @media only screen and (1366px <= width <= 1440px) {
+    @media only screen and (85.375em <= width <= 90em) {
         padding: 7.5em 5em 0 5em;
     }
 
-    @media only screen and (width > 1440px) {
+    @media only screen and (width > 90em) {
         padding: 7.5em 5em 9.5625em 5em;
     }
 `
@@ -31,21 +31,21 @@ const FeatHeader = styled.h1`
     letter-spacing:-1.67px;
     margin-bottom: 0.4em;
 
-    @media only screen and (600px <= width <= 1920px) {
+    @media only screen and (37.5em <= width <= 120em) {
         font-size: 3rem;
         letter-spacing: -2px;
         
     }
 
-    @media only screen and (1024px <= width <= 1439px) {
+    @media only screen and (65em <= width <= 89.9375em) {
         font-size: 2.3rem;
     }
 
-    @media only screen and (width >= 1440px) {
+    @media only screen and (width >= 90em) {
         font-size: 2.5rem;
     }
 
-    @media only screen and (width > 1440px) {
+    @media only screen and (width > 90em) {
         font-size: 3rem;
     }
 
@@ -57,22 +57,22 @@ const FeatContent = styled.p`
     letter-spacing: -0.67px;
     line-height: 1.37rem;
 
-    @media only screen and (600px <= width <= 1023px) {
+    @media only screen and (37.5em <= width <= 63.9375em) {
         font-size: 1.2rem;
         letter-spacing: -0.33px;
         line-height: 1.5rem;
     }
 
-    @media only screen and (1024px <= width <= 1920px) {
+    @media only screen and (64em <= width <= 120em) {
         font-size: 0.9rem;
         line-height: 1.2rem;
     }
 
-    @media only screen and (1366px <= width <= 1440px) {
+    @media only screen and (85.375em <= width <= 90em) {
         font-size: 1.1rem;
     }
 
-    @media only screen and (width > 1440px) {
+    @media only screen and (width > 90em) {
         font-size: 1.3em;
         line-height: 1.4rem;
     }
@@ -114,7 +114,7 @@ const FeatButton = styled.button<Props>`
         transition: 0.3s ease-in-out;
     }
 
-    @media only screen and (600px <= width <= 1920px) {
+    @media only screen and (37.5em <= width <= 120em) {
         width: ${(props) => (props.variant ? '5em' : '')};
         height: ${(props) => (props.variant ? '5em' : '')};
 
@@ -132,14 +132,14 @@ const FeatButton = styled.button<Props>`
         margin: 0 auto;
     }
 
-    @media only screen and (width >= 1024px) {
+    @media only screen and (width >= 64em) {
         width: ${(props) => (props.variant ? '4em' : '')};
         height: ${(props) => (props.variant ? '4em' : '')};
         margin-top: ${(props) => (props.variant ? '-2.2em' : '2.56em')};
         font-size: 1rem;
     }
 
-    @media only screen and (1366px <= width <= 1440px) {
+    @media only screen and (85.375em <= width <= 90em) {
         width: ${(props) => (props.variant ? '5em' : '')};
         height: ${(props) => (props.variant ? '5em' : '')};
         margin-top: ${(props) => (props.variant ? '-7.45em' : '2.56em')};
@@ -155,15 +155,15 @@ const FeatNav = styled.nav`
     left: 0;
     transform: translate(0, -100%);
 
-    @media only screen and (1024px <= width <= 1920px) {
+    @media only screen and (64em <= width <= 120em) {
         display: flex;
     }
 
-    @media only screen and (min-width: 1440px) {
+    @media only screen and (min-width: 85.375em) {
         top: 106.55%;
     }
 
-    @media only screen and (width > 1440px) {
+    @media only screen and (width > 90em) {
         top: 100%;
     }
 

@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
         width: 23.44em;
         overflow-x: hidden;
 
-        @media (376px <= width <= 1920px) {
+        @media (23.5em <= width <= 120em) {
             width: 100%;
         }
     }
