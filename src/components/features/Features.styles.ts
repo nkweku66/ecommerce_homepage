@@ -145,6 +145,10 @@ const FeatButton = styled.button<Props>`
         margin-top: ${(props) => (props.variant ? '-7.45em' : '2.56em')};
     }
 
+    @media only screen and (85em <= width <= 85.375em) {
+        margin-top: ${(props) => (props.variant ? '-7.35em' : '2.56em')};
+    }
+
 }
 
 `
