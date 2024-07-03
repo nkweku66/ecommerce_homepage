@@ -9,10 +9,16 @@ const Wrapper = styled.div`
         grid-template-columns: 65% 35%;
     }
 
-    @media only screen and (min-width: 1440px){
+    /* @media only screen and (min-width: 1440px){
       grid-template-rows: 534px;
       grid-template-columns: 840px 600px;
-    }
+    } */
+
+    /* @media only screen and (width > 1440px)
+    {
+      grid-template-rows: 100%;
+      grid-template-columns: 65% 35% ;
+    } */
 
 `
 

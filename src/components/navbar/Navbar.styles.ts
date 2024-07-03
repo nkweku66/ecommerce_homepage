@@ -10,7 +10,7 @@ const NavDesk = styled.nav`
     position: absolute;
 
 
-    @media only screen and (728px <= width <= 1920px) {
+    @media only screen and (600px <= width <= 1920px) {
         display: flex;
         align-tems: center;
     }
@@ -22,7 +22,7 @@ const Nav = styled.nav`
     margin: 3em 1.5em;
     position: absolute;
 
-    @media only screen and (728px <= width <= 1920px) {
+    @media only screen and (600px <= width <= 1920px) {
         display: none;
     }
 `
@@ -39,7 +39,7 @@ const NavLogo = styled.img`
     height: 0.9em;
     cursor: pointer;
 
-    @media only screen and (728px <= width <= 1920px) {
+    @media only screen and (600px <= width <= 1920px) {
         margin-left: 0;
         margin-right: 3em;
     }
@@ -61,7 +61,7 @@ const Navmenu = styled.nav<Props>`
     transition: ease-out 0.5s;
 
 
-    @media only screen and (728px <= width <= 1920px) {
+    @media only screen and (600px <= width <= 1920px) {
         display: none;
     }
 `
@@ -75,7 +75,11 @@ const Navlinks = styled.ul`
     margin-left: 4em;
 
     @media only screen and (728px <= width <= 1024px) {
-        gap: 3rem;
+        gap: 2rem;
+    }
+
+    @media only screen and (width > 1100px) {
+        gap: 2.5rem;
     }
 
 `
@@ -93,7 +97,11 @@ const Navlink = styled.a`
         color: #666;
     }
 
-    @media only screen and (728px <= width <= 1920px) {
+    @media only screen and (width > 1500px) {
+        font-size: 1.5rem;
+    }
+
+    @media only screen and (600px <= width <= 1920px) {
         color: #fff;
         font-size: 1.2rem;
 

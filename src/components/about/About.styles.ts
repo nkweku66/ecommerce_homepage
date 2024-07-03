@@ -3,7 +3,6 @@ import styled from 'styled-components'
 const AboutWrapper = styled.section`
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
 
     @media only screen and (1024px <= width <= 1920px) {
         flex-direction: row;
@@ -12,27 +11,45 @@ const AboutWrapper = styled.section`
 const AboutImage = styled.img`
     width: 100%;
 
-    @media only screen and (1024px <= width <= 1920px) {
-        width: 100%;
-        height: 100%;
+    @media only screen and (1024px <= width <= 1439px) {
+        width: 20.5em;
+    }
+
+    @media only screen and (1200px <= width <= 1439px) {
+        width: 25em;
+    }
+
+    @media only screen and (width > 1440px) {
+        width: 150em;
+    }
+
+    @media only screen and (width >= 1600px) {
+        width: 200em;
     }
     
 `
 
 const AboutContainer = styled.div`
     padding: 3.0625em 2em 2.56em 2em;
-    border: 1px solid red;
 
-    @media only screen and (728px <= width <= 1920px) {
-        padding: 5em 6.25em 0 6em; 
+    @media only screen and (600px <= width <= 1023px) {
+        padding: 5em 6.25em 5em 6em; 
     }
 
     @media only screen and (width >= 1024px) {
         padding: 2em 2em 0 2em;
     }
 
+    @media only screen and (1200px <= width <= 1439px) {
+        padding: 2.5em 2em 0 2em;
+    }
+
     @media only screen and (width >= 1440px) {
-        padding: 4.5em 3em 0 3em;
+        padding: 4em 3.5em 0 3.5em;
+    }
+
+    @media only screen and (width > 1440px) {
+        padding: 4em 3.5em 2em 3.5em;
     }
 `
 const AboutHeader = styled.h2`
@@ -42,16 +59,24 @@ const AboutHeader = styled.h2`
     letter-spacing:5.83px;
     margin-bottom: 1em;
 
-    @media only screen and (728px <= width <= 1920px) {
+    @media only screen and (600px <= width <= 1023px) {
         font-size: 1.3rem;
     }
 
-    @media only screen and (width >= 1024px) {
+    @media only screen and (1024px <= width <= 1199px) {
         font-size: 0.9em;
     }
 
+    @media only screen and (1200px <= width <= 1439px) {
+        font-size: 1rem;
+    }
+
     @media only screen and (width >= 1440px) {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+    }
+
+    @media only screen and (width > 1440px) {
+        font-size: 1.5rem;
     }
 `
 const AboutContent = styled.p`
@@ -59,18 +84,26 @@ const AboutContent = styled.p`
     letter-spacing: -0.33px;
     line-height: 1.37rem;
 
-    @media only screen and (728px <= width <= 1920px) {
+    @media only screen and (600px <= width <= 1920px) {
         font-size: 1.2rem;
         line-height: 1.5rem;
     }
 
-    @media only screen and (width >= 1024px ) {
+    @media only screen and (1024px <= width <= 1199px ) {
         font-size: 0.875rem;
         line-height: 1.2rem;
     }
 
+    @media only screen and (1200px <= width <= 1439px) {
+        font-size: 0.9rem;
+    }
+
     @media only screen and (width >= 1440px) {
         font-size: 1.1rem;
+    }
+
+    @media only screen and (width > 1440px) {
+        font-size: 1.2rem;
     }
 `
 

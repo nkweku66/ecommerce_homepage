@@ -17,7 +17,7 @@ const HeroWrapper = styled.div`
 const HeroDesktop = styled.section`
     display: none;
 
-    @media only screen and (768px <= width <= 1920px) {
+    @media only screen and (600px <= width <= 1920px) {
         display: flex;
         width: 100%;
     }
@@ -27,7 +27,7 @@ const HeroImage = styled.img<HeroProps>`
     height: 100%;
     object-fit:cover;
 
-    @media only screen and (768px <= width <= 1023px) {
+    @media only screen and (600px <= width <= 1023px) {
         display: ${(props) => (props.mobile ? 'none' : '')};
     }
 `
@@ -41,7 +41,7 @@ const HeroNav = styled.nav`
     transform: translate(-100%, -100%);
 
 
-    @media only screen and (min-width: 728px) {
+    @media only screen and (min-width: 600px) {
         margin-top: 0;
     }
 `
