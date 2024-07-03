@@ -37,7 +37,7 @@ const FeatHeader = styled.h1`
         
     }
 
-    @media only screen and (65em <= width <= 89.9375em) {
+    @media only screen and (64em <= width <= 89.9375em) {
         font-size: 2.3rem;
     }
 
