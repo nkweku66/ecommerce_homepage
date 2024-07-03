@@ -16,7 +16,11 @@ const FeatWrapper = styled.section`
         padding: 4.5em 2.25em 3em 3em;
     }
 
-    @media only screen and (min-width: 1440px) {
+    @media only screen and (1366px <= width <= 1440px) {
+        padding: 7.5em 5em 9.5625em 5em;
+    }
+
+    @media only screen and (1366px <= width <= 1440px) {
         padding: 7.5em 5em 9.5625em 5em;
     }
 `
@@ -37,7 +41,7 @@ const FeatHeader = styled.h1`
         font-size: 2.3rem;
     }
 
-    @media only screen and (min-width: 1440px) {
+    @media only screen and (1366px <= width <= 1440px) {
         font-size: 3em;
     }
 
@@ -59,7 +63,7 @@ const FeatContent = styled.p`
         line-height: 1.2rem;
     }
 
-    @media only screen and (min-width: 1440px) {
+    @media only screen and (1366px <= width <= 1440px) {
         font-size: 1.1rem;
     }
 `
@@ -124,7 +128,7 @@ const FeatButton = styled.button<Props>`
         margin-top: ${(props) => (props.variant ? '-2.2em' : '2.56em')};
     }
 
-    @media only screen and (min-width: 1440px) {
+    @media only screen and (1366px <= width <= 1440px) {
         width: ${(props) => (props.variant ? '5em' : '')};
         height: ${(props) => (props.variant ? '5em' : '')};
         margin-top: ${(props) => (props.variant ? '-7.45em' : '2.56em')};
@@ -136,15 +140,16 @@ const FeatButton = styled.button<Props>`
 const FeatNav = styled.nav`
     display: none;
     position: absolute;
-    top: 28.85em;
+    top: 100%;
     left: 0;
+    transform: translate(0, -100%);
 
     @media only screen and (1024px <= width <= 1920px) {
         display: flex;
-        top: 24.8em;
+        /* top: 24.8em; */
     }
 
-    @media only screen and (min-width: 1440px) {
+    @media only screen and (1366px <= width <= 1440px) {
         top: 35.55em;
     }
 `

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 const AboutWrapper = styled.section`
     display: flex;
     flex-direction: column;
+    border: 1px solid red;
 
     @media only screen and (1024px <= width <= 1920px) {
         flex-direction: row;
@@ -12,21 +13,18 @@ const AboutImage = styled.img`
     width: 100%;
 
     @media only screen and (1024px <= width <= 1920px) {
-        width: 30%;
+        width: 100%;
         height: 100%;
-
-        &:nth-last-child(1) {
-            width: 31.25%;
-        }
     }
     
 `
 
 const AboutContainer = styled.div`
     padding: 3.0625em 2em 2.56em 2em;
+    border: 1px solid red;
 
     @media only screen and (728px <= width <= 1920px) {
-        padding: 5em 6.25em 7em 6em; 
+        padding: 5em 6.25em 0 6em; 
     }
 
     @media only screen and (width >= 1024px) {
