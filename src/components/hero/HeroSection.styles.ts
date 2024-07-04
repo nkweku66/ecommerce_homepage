@@ -63,6 +63,11 @@ const HeroButton = styled.button`
     &:active {
         background-color: #444444;
     }
+
+    @media only screen and (min-width: 37.5em) {
+        width: 5em;
+        height: 5em;
+    }
 `
 
 
