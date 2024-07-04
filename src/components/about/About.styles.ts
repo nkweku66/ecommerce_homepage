@@ -4,7 +4,7 @@ const AboutWrapper = styled.section`
     display: flex;
     flex-direction: column;
 
-    @media only screen and (64em <= width <= 120em) {
+    @media only screen and (width >= 64em) {
         flex-direction: row;
     }
 `

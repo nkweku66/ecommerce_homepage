@@ -10,7 +10,7 @@ const NavDesk = styled.nav`
     position: absolute;
 
 
-    @media only screen and (37.5em <= width <= 120em) {
+    @media only screen and (width >= 37.5em) {
         display: flex;
         align-tems: center;
     }
@@ -22,7 +22,7 @@ const Nav = styled.nav`
     margin: 3em 1.5em;
     position: absolute;
 
-    @media only screen and (37.5em <= width <= 120em) {
+    @media only screen and (width >= 37.5em) {
         display: none;
     }
 `
@@ -39,7 +39,8 @@ const NavLogo = styled.img`
     height: 0.9em;
     cursor: pointer;
 
-    @media only screen and (37.5em <= width <= 120em) {
+    @media only screen and (width >= 37.5em) {
+        height: 1em;
         margin-left: 0;
         margin-right: 3em;
     }
@@ -48,7 +49,6 @@ const NavLogo = styled.img`
 const Navmenu = styled.nav<Props>`
     display: ${props => props.visible ? 'flex' : 'none'};
     position: absolute;
-    /* justify-content: space-between; */
     align-items: center;
     top: 0;
     left: 0;
@@ -61,7 +61,7 @@ const Navmenu = styled.nav<Props>`
     transition: ease-out 0.5s;
 
 
-    @media only screen and (37.5em <= width <= 120em) {
+    @media only screen and (width >= 37.5em) {
         display: none;
     }
 `
@@ -101,7 +101,7 @@ const Navlink = styled.a`
         font-size: 1.5rem;
     }
 
-    @media only screen and (37.5em <= width <= 120em) {
+    @media only screen and (width >= 37.5em) {
         color: #fff;
         font-size: 1.2rem;
 

@@ -10,9 +10,8 @@ const GlobalStyle = createGlobalStyle`
     body {
         font-family: 'League Spartan', sans-serif;
         width: 23.44em;
-        overflow-x: hidden;
 
-        @media (23.5em <= width <= 120em) {
+        @media (width >= 23.5em) {
             width: 100%;
         }
     }

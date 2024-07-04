@@ -7,17 +7,18 @@ const HeroContainer = styled.section`
     position: relative;
 
     
-    @media only screen and (64em <= width <= 120em) {
+    @media only screen and (width >= 64em) {
         display: none;
     }
 `
 const HeroWrapper = styled.div`
     position: relative;
+    width: 100%;
 `
 const HeroDesktop = styled.section`
     display: none;
 
-    @media only screen and (37.5em <= width <= 120em) {
+    @media only screen and (width >= 37.5em) {
         display: flex;
         width: 100%;
     }
